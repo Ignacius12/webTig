@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da9157766653af7d328668ff09ee460c {
+                    position: absolute;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_804f68a387bcef07eb99bf7a57a6f747 {
+                    position: absolute;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 50.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/jieter/Leaflet.Sync/L.Map.Sync.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da9157766653af7d328668ff09ee460c" ></div>
+        
+    
+            <div class="folium-map" id="map_804f68a387bcef07eb99bf7a57a6f747" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da9157766653af7d328668ff09ee460c = L.map(
+                "map_da9157766653af7d328668ff09ee460c",
+                {
+                    center: [38.9, -0.28],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_519a270937103475c440b975bceadae3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_519a270937103475c440b975bceadae3.addTo(map_da9157766653af7d328668ff09ee460c);
+        
+    
+            var tile_layer_a43063d005a9fbdddc7d2e81157216f9 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/457080427546/maps/2b652ba1957819c637203a4c871de5c3-2cb7bfdaa81d0432105881c5ba7770ad/tiles/{z}/{x}/{y}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Alex Escriv\u00e0 Caravaca: Tecnolog\u00edas de la Informaci\u00f3n Geogr\u00e1fica",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a43063d005a9fbdddc7d2e81157216f9.addTo(map_da9157766653af7d328668ff09ee460c);
+        
+    
+            var tile_layer_da9d1f162acbdcdffaaea7c9bfcaf8b9 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/457080427546/maps/3ad668ea0a5e1194b1af13135ec28be8-b96a855e7b50770a3c5aaeeef2048e93/tiles/{z}/{x}/{y}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Alex Escriv\u00e0 Caravaca: Tecnolog\u00edas de la Informaci\u00f3n Geogr\u00e1fica",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_da9d1f162acbdcdffaaea7c9bfcaf8b9.addTo(map_da9157766653af7d328668ff09ee460c);
+        
+    
+            var layer_control_20f5269c86933e557312d3863e12019e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_519a270937103475c440b975bceadae3,
+                },
+                overlays :  {
+                    "SAVI_pre" : tile_layer_a43063d005a9fbdddc7d2e81157216f9,
+                    "SAVI_post" : tile_layer_da9d1f162acbdcdffaaea7c9bfcaf8b9,
+                },
+            };
+            let layer_control_20f5269c86933e557312d3863e12019e = L.control.layers(
+                layer_control_20f5269c86933e557312d3863e12019e_layers.base_layers,
+                layer_control_20f5269c86933e557312d3863e12019e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_da9157766653af7d328668ff09ee460c);
+
+        
+    
+            var map_804f68a387bcef07eb99bf7a57a6f747 = L.map(
+                "map_804f68a387bcef07eb99bf7a57a6f747",
+                {
+                    center: [38.9, -0.28],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_72b5026f4863273cc54013abe3b08707 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_72b5026f4863273cc54013abe3b08707.addTo(map_804f68a387bcef07eb99bf7a57a6f747);
+        
+    
+            var tile_layer_721c62958af5066f9b7f9d8e31932991 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/457080427546/maps/4ebbac8f3b63b5df60b0eb9900814521-d37745bcb9022246d4dd9460a980e81a/tiles/{z}/{x}/{y}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Alex Escriv\u00e0 Caravaca: Tecnolog\u00edas de la Informaci\u00f3n Geogr\u00e1fica",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_721c62958af5066f9b7f9d8e31932991.addTo(map_804f68a387bcef07eb99bf7a57a6f747);
+        
+    
+            var tile_layer_eb8f65ab1d33b05fa13ace892cbf066f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/457080427546/maps/95a0430a7ac417b9bf14947616718b62-d6c9f16dbbc0f2f9d18a8c5964564e5a/tiles/{z}/{x}/{y}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Alex Escriv\u00e0 Caravaca: Tecnolog\u00edas de la Informaci\u00f3n Geogr\u00e1fica",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eb8f65ab1d33b05fa13ace892cbf066f.addTo(map_804f68a387bcef07eb99bf7a57a6f747);
+        
+    
+            map_da9157766653af7d328668ff09ee460c.sync(map_804f68a387bcef07eb99bf7a57a6f747);
+            map_804f68a387bcef07eb99bf7a57a6f747.sync(map_da9157766653af7d328668ff09ee460c);
+        
+    
+            var layer_control_84c563ea94794ef79ca29596a78e0ca0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_72b5026f4863273cc54013abe3b08707,
+                },
+                overlays :  {
+                    "EVI_pre" : tile_layer_721c62958af5066f9b7f9d8e31932991,
+                    "EVI_post" : tile_layer_eb8f65ab1d33b05fa13ace892cbf066f,
+                },
+            };
+            let layer_control_84c563ea94794ef79ca29596a78e0ca0 = L.control.layers(
+                layer_control_84c563ea94794ef79ca29596a78e0ca0_layers.base_layers,
+                layer_control_84c563ea94794ef79ca29596a78e0ca0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_804f68a387bcef07eb99bf7a57a6f747);
+
+        
+</script>
+</html>
